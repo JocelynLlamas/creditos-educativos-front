@@ -1,10 +1,8 @@
-# PruebaTecnicaFront
+# Proyecto de Solicitudes de Crédito
 
 ![Captura de pantalla](https://github.com/JocelynLlamas/creditos-educativos-front/blob/main/src/assets/img/home.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
-
-# Proyecto de Solicitudes de Crédito
 
 Este es el frontedn de una prueba técnica para gestionar solicitudes de crédito utilizando Angular. La aplicación permite crear, visualizar, actualizar y eliminar solicitudes de crédito, así como gestionar usuarios.
 
