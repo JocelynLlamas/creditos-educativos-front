@@ -1,10 +1,17 @@
 <div>
     <h2>Usuarios registrados</h2>
-    <!-- <div *ngFor="let request of creditRequests" class="credit-request">
-        <p>{{ request.id }}</p>
-        <p>{{ request.purpose }}</p>
-        <div>
-            <button class="delete" (click)="deleteRequest(request.id)">Delete</button>
-        </div>
-    </div> -->
+    <table class="table table-striped">
+        <thead>
+            <tr class="text-center">
+                <th>ID</th>
+                <th>Nombre de usuario</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users" class="text-center">
+                <td>{{ user.id }}</td>
+                <td>{{ user.username }}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>

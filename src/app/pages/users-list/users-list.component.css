@@ -1,0 +1,82 @@
+.create {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.create i {
+    margin-right: 5px;
+}
+
+.create:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button.view {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button.delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button.pending {
+    background-color: #ffc107;
+    color: #000;
+}
+
+button.approve {
+    background-color: #28a745;
+    color: #fff;
+}
+
+button.reject {
+    background-color: #ffc107;
+    color: #000;
+}
+
+button:hover {
+    opacity: 0.9;
+}
