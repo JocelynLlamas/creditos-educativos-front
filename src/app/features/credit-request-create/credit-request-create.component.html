@@ -1,0 +1,14 @@
+<div>
+    <h2>Create New Credit Request</h2>
+    <form (ngSubmit)="createRequest()">
+        <div>
+            <label for="amount">Amount</label>
+            <input type="number" [(ngModel)]="amount" name="amount" required>
+        </div>
+        <div>
+            <label for="purpose">Purpose</label>
+            <input type="text" [(ngModel)]="purpose" name="purpose" required>
+        </div>
+        <button type="submit">Create</button>
+    </form>
+</div>

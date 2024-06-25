@@ -9,6 +9,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { CreditRequestListComponent } from './features/credit-request-list/credit-request-list.component';
 import { CreditRequestDetailComponent } from './features/credit-request-detail/credit-request-detail.component';
+import { CreditRequestCreateComponent } from './features/credit-request-create/credit-request-create.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CreditRequestDetailComponent } from './features/credit-request-detail/c
     LoginComponent,
     RegisterComponent,
     CreditRequestListComponent,
-    CreditRequestDetailComponent
+    CreditRequestDetailComponent,
+    CreditRequestCreateComponent
   ],
   imports: [
     BrowserModule,

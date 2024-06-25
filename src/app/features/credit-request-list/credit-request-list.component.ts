@@ -23,6 +23,10 @@ export class CreditRequestListComponent implements OnInit {
     this.router.navigate(['/credit-requests', id]);
   }
 
+  createNewRequest() {
+    this.router.navigate(['/credit-requests/create']);
+  }
+
   deleteRequest(id: number) {
     this.creditRequestService.deleteRequest(id).subscribe(() => {
       this.creditRequests = this.creditRequests.filter(request => request.id !== id);
