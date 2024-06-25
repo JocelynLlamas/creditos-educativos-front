@@ -1,6 +1,7 @@
 <div>
     <h2>Solicitudes de crédito</h2>
-    <button (click)="createNewRequest()" class="create">Agregar <i class="fa-solid fa-plus"></i></button>
+    <button (click)="createNewRequest()" class="create btn btn-primary mb-3">Agregar <i
+            class="fa-solid fa-plus"></i></button>
     <table class="table table-striped">
         <thead>
             <tr class="text-center">
@@ -16,7 +17,7 @@
                 <td>{{ request.purpose }}</td>
                 <td>{{ request.amount }}</td>
                 <td>{{ request.status }}</td>
-                <td>{{ request.userId }}</td>
+                <td>{{ getUserName(request.userId) }}</td>
                 <td>
                     <button class="btn btn-info btn-sm" (click)="viewDetail(request.id)">
                         <i class="fas fa-pen"></i>
@@ -34,6 +35,4 @@
             </tr>
         </tbody>
     </table>
-
-
 </div>
