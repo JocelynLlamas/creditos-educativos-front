@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { User } from 'src/app/models/user.model';
 import { CreditRequestService } from 'src/app/services/credit-request/credit-request.service'; 
 
 @Component({
@@ -11,6 +12,8 @@ export class CreditRequestCreateComponent {
   amount: number = 0;
   purpose: string = '';
   status: string = 'pendiente';
+  users: User[] = []; 
+  selectedUserId: number = 0; 
 
   constructor(
     private creditRequestService: CreditRequestService,

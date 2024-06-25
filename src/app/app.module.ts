@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'; // Importar FormsModule
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,7 +25,7 @@ import { UsersListComponent } from './pages/users-list/users-list.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule, // Añadir FormsModule aquí
+    FormsModule,
     HttpClientModule
   ],
   providers: [],
