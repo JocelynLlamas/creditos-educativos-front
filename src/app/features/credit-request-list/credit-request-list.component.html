@@ -1,0 +1,12 @@
+<div>
+    <h2>Credit Requests</h2>
+    <div *ngFor="let request of creditRequests" class="credit-request">
+        <p>{{ request.purpose }} - {{ request.status }}</p>
+        <div>
+            <button class="view" (click)="viewDetail(request.id)">View</button>
+            <button class="delete" (click)="deleteRequest(request.id)">Delete</button>
+            <button class="approve" (click)="updateStatus(request.id, 'aprobada')">Approve</button>
+            <button class="reject" (click)="updateStatus(request.id, 'rechazada')">Reject</button>
+        </div>
+    </div>
+</div>
