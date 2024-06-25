@@ -49,3 +49,12 @@ button {
 button:hover {
     background-color: #218838;
 }
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(100% - 22px);
+    /* Adjust for padding and border */
+}

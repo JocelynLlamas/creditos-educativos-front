@@ -1,13 +1,27 @@
 <div>
-    <h2>Create New Credit Request</h2>
+    <h2>Crear nueva solicitud de crédito</h2>
     <form (ngSubmit)="createRequest()">
         <div>
-            <label for="amount">Amount</label>
+            <label for="amount">Monto</label>
             <input type="number" [(ngModel)]="amount" name="amount" required>
         </div>
         <div>
-            <label for="purpose">Purpose</label>
+            <label for="purpose">Propósito</label>
             <input type="text" [(ngModel)]="purpose" name="purpose" required>
+        </div>
+        <div>
+            <label for="status">Status</label>
+            <select [(ngModel)]="status" name="status" required>
+                <option value="pendiente">Pendiente</option>
+                <option value="aprobada">Aprobada</option>
+                <option value="rechazada">Rechazada</option>
+            </select>
+        </div>
+        <div>
+            <label for="user">Usuario</label>
+            <select [(ngModel)]="selectedUserId" name="user" required>
+                <option *ngFor="let user of users" [value]="user.id">{{ user.username }}</option>
+            </select>
         </div>
         <button type="submit">Create</button>
     </form>
