@@ -10,6 +10,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { CreditRequestListComponent } from './features/credit-request-list/credit-request-list.component';
 import { CreditRequestDetailComponent } from './features/credit-request-detail/credit-request-detail.component';
 import { CreditRequestCreateComponent } from './features/credit-request-create/credit-request-create.component';
+import { UsersListComponent } from './pages/users-list/users-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CreditRequestCreateComponent } from './features/credit-request-create/c
     RegisterComponent,
     CreditRequestListComponent,
     CreditRequestDetailComponent,
-    CreditRequestCreateComponent
+    CreditRequestCreateComponent,
+    UsersListComponent
   ],
   imports: [
     BrowserModule,
