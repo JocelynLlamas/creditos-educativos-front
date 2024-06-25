@@ -1,13 +1,39 @@
 <div>
-    <h2>Credit Requests</h2>
-    <button (click)="createNewRequest()" class="create">Create New Request</button>
-    <div *ngFor="let request of creditRequests" class="credit-request">
-        <p>{{ request.purpose }} - {{ request.status }}</p>
-        <div>
-            <button class="view" (click)="viewDetail(request.id)">View</button>
-            <button class="delete" (click)="deleteRequest(request.id)">Delete</button>
-            <button class="approve" (click)="updateStatus(request.id, 'aprobada')">Approve</button>
-            <button class="reject" (click)="updateStatus(request.id, 'rechazada')">Reject</button>
-        </div>
-    </div>
+    <h2>Solicitudes de crédito</h2>
+    <button (click)="createNewRequest()" class="create">Agregar <i class="fa-solid fa-plus"></i></button>
+    <table class="table table-striped">
+        <thead>
+            <tr class="text-center">
+                <th>Propósito</th>
+                <th>Monto</th>
+                <th>Estado</th>
+                <th>Usuario</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let request of creditRequests" class="text-center">
+                <td>{{ request.purpose }}</td>
+                <td>{{ request.amount }}</td>
+                <td>{{ request.status }}</td>
+                <td>{{ request.userId }}</td>
+                <td>
+                    <button class="btn btn-info btn-sm" (click)="viewDetail(request.id)">
+                        <i class="fas fa-pen"></i>
+                    </button>
+                    <button class="btn btn-danger btn-sm" (click)="deleteRequest(request.id)">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                    <button class="btn btn-warning btn-sm"
+                        (click)="updateStatus(request.id, 'pendiente')">Pendiente</button>
+                    <button class="btn btn-success btn-sm"
+                        (click)="updateStatus(request.id, 'aprobada')">Aprobada</button>
+                    <button class="btn btn-secondary btn-sm"
+                        (click)="updateStatus(request.id, 'rechazada')">Rechazada</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
 </div>
