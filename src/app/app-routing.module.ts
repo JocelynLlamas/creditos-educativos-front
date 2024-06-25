@@ -5,10 +5,12 @@ import { RegisterComponent } from './pages/register/register.component';
 import { CreditRequestListComponent } from './features/credit-request-list/credit-request-list.component';
 import { CreditRequestDetailComponent } from './features/credit-request-detail/credit-request-detail.component';
 import { CreditRequestCreateComponent } from './features/credit-request-create/credit-request-create.component';
+import { UsersListComponent } from './pages/users-list/users-list.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'users', component: UsersListComponent },
   { path: 'credit-requests', component: CreditRequestListComponent },
   { path: 'credit-requests/create', component: CreditRequestCreateComponent },
   { path: 'credit-requests/:id', component: CreditRequestDetailComponent },
