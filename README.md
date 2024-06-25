@@ -1,27 +1,43 @@
 # PruebaTecnicaFront
 
+![Captura de pantalla](assets/img/home.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
 
-## Development server
+# Proyecto de Solicitudes de Crédito
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este es el frontedn de una prueba técnica para gestionar solicitudes de crédito utilizando Angular. La aplicación permite crear, visualizar, actualizar y eliminar solicitudes de crédito, así como gestionar usuarios.
 
-## Code scaffolding
+## Características
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Crear nuevas solicitudes de crédito
+- Visualizar la lista de solicitudes de crédito
+- Actualizar el estado de las solicitudes de crédito
+- Eliminar solicitudes de crédito
+- Gestionar usuarios (crear, visualizar)
 
-## Build
+## Requisitos
+- Node.js y npm
+- Angular CLI
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instalación
 
-## Running unit tests
+Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Clonar el repositorio**:
 
-## Running end-to-end tests
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repositorio.git
+   cd tu-repositorio
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. **Instalar las dependencias**:
 
-## Further help
+   ```bash
+   npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. **Configurar el servidor backend**:
+
+    Asegúrate de que el servidor backend esté corriendo en http://localhost:8080. Este proyecto se conecta a un backend que gestiona las solicitudes de crédito y usuarios.
+
+4. **Servidor de desarrollo**:
+    Ejecuta ng serve para iniciar un servidor de desarrollo. Navega a http://localhost:4200/. La aplicación se recargará automáticamente si cambias alguno de los archivos fuente.
