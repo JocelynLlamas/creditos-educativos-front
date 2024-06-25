@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { CreditRequest } from 'src/app/models/creditRequest.model';
 import { User } from 'src/app/models/user.model';
 import { CreditRequestService } from 'src/app/services/credit-request/credit-request.service';
 import { UserService } from 'src/app/services/users/user.service';
@@ -10,7 +11,7 @@ import { UserService } from 'src/app/services/users/user.service';
   styleUrls: ['./credit-request-detail.component.css']
 })
 export class CreditRequestDetailComponent implements OnInit {
-  creditRequest: any = {};
+  creditRequest: CreditRequest = { id: 0, amount: 0, purpose: '', status: 'pendiente', userId: 0 };
   id: number | null = null;
   users: User[] = [];
   selectedUserId: number = 0;

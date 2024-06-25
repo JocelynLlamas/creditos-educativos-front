@@ -24,7 +24,8 @@ export class CreditRequestCreateComponent {
     const newRequest = {
       amount: this.amount,
       purpose: this.purpose,
-      status: this.status
+      status: this.status,
+      userId: this.selectedUserId
     };
 
     this.creditRequestService.createRequest(newRequest).subscribe(() => {
