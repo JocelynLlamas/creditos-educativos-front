@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importar una fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Aplicar la fuente a todo el cuerpo del documento */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos globales */
+h2 {
+    font-weight: 700;
+    color: #333;
+}
+
+label {
+    font-weight: 700;
+    color: #333;
+}
+
+input,
+select {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+nav a {
+    font-weight: 700;
+}
