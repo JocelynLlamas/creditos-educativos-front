@@ -1,6 +1,6 @@
 # PruebaTecnicaFront
 
-![Captura de pantalla](assets/img/home.png)
+![Captura de pantalla](https://github.com/JocelynLlamas/creditos-educativos-front/blob/main/src/assets/img/home.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
 
